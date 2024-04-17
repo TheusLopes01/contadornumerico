@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+  }
+  
+  
+  #counters-timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .counters-container {
+    display: flex;
+    justify-content: center; /* Centraliza os contadores horizontalmente */
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior entre os contadores e o timer */
+  }
+  
+  
+  #all {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .container {
+      text-align: center;
+      margin: 0 10px; /* Espaçamento entre os containers */
+    }
+  
+  p {
+    display: list-item;
+  }
+  
+  h1, h2 {
+    color: #333;
+    font-size: 25px; /* Reduzido o tamanho das fontes para telas menores */
+    text-align: center;
+  }
+  
+  h3 {
+    border: 1px solid #000000; /* Reduzido a espessura da borda */
+    background-color: #000000;
+    color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px; /* Reduzido o preenchimento */
+    text-align: center;
+  }
+  
+  #counter1, #counter2 {
+    background-color: #507dfa;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 36px; /* Reduzido o tamanho da fonte */
+    color: white;
+    margin-bottom: 10px;
+    padding: 15px 20px; /* Reduzido o preenchimento */
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha */
+  }
+  
+  .timer {
+    text-align: center; /* Centraliza horizontalmente */
+    margin-top: 20px;
+  }
+  
+  #timerDisplay {
+    background-color: #507dfa;
+    color: white;
+    border: 2px solid;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 5px 10px; /* Ajustado o preenchimento */
+    display: inline;
+  }
+  
+  
+  .button {
+    padding: 10px 30px; /* Reduzido o preenchimento */
+    font-size: 14px; /* Reduzido o tamanho da fonte */
+    margin: 5px; /* Aumentado o espaçamento entre os botões */
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+  
+  }
+  
+  
+  .button:hover {
+    background-color: #507dfa;
+  }
+  
+  #infoBtn {
+    margin-top: 20px; /* Adiciona um espaçamento superior */
+    display: block; /* Transforma o botão em um bloco para aplicar margin:auto */
+    margin-left: auto; /* Coloca o botão na posição central horizontalmente */
+    margin-right: auto; /* Coloca o botão na posição central horizontalmente */
+    }
+  
+  #modify1, #modify2 {
+    max-width: 60px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+  }
+  
+  #hoursList {
+    max-width: 112px;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+  }
+  
+  #customTimer {
+    max-width: 73px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+  }
+  
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    body {
+      padding: 0 10px; /* Adiciona um pouco de espaço nas laterais do corpo */
+    }
+  
+    #all {
+      padding: 20px; /* Adiciona um pouco de espaço dentro do contêiner principal */
+    }
+  
+    .container {
+      margin: 10px 0; /* Reduz o espaçamento superior e inferior entre os containers */
+    }
+  
+    #counter1, #counter2 {
+      font-size: 24px; /* Reduz o tamanho da fonte dos contadores */
+      padding: 10px; /* Reduz o preenchimento dos contadores */
+    }
+  
+    .button {
+      font-size: 12px; /* Reduz o tamanho da fonte dos botões */
+      padding: 8px 16px; /* Reduz o preenchimento dos botões */
+    }
+  
+    .timer {
+      margin-top: 20px; /* Ajusta o espaçamento superior */
+    }
+  }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/notyf/3.10.0/notyf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/notyf/3.10.0/notyf.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Contador Numérico</title>
+</head>
+<body>
+  <div id="all">
+    <h1>Contador Numérico</h1>
+    <br>
+    <div id="counters-timer-container">
+      <div class="counters-container">
+        <div class="container">
+          <div class="counter" id="counter1" title="Realizados">0</div>
+          <div class="buttons">
+            <button class="button" id="decrementBtn1" title="Menos">-</button>
+            <button class="button" id="incrementBtn1" title="Mais">+</button>
+          </div>
+          <br>
+          <label for="dcrsres">Realizados</label>
+          <input value="" type="search" name="dcrsrea" id="modify1" maxlength="3" title="Personalizar número Realizados">
+          <button class="button" id="bmodifyCounterBtn1" title="Aplicar">Aplicar</button>
+          <button class="button" id="resetCounterBtn1" title="Zerar Realizados">Zerar</button>
+
+        </div>
+
+        <div class="container">
+          <div class="counter" id="counter2" title="DCRS Restantes">0</div>
+          <div class="buttons">
+            <button class="button" id="decrementBtn2" title="Menos">-</button>
+            <button class="button" id="incrementBtn2" title="Mais">+</button>
+          </div>
+          <br>
+          <label for="dcrsres">Restantes</label>
+          <input value="" type="search" name="dcrsres" id="modify2" maxlength="3" title="Personalizar número Restantes">
+          <button class="button" id="bmodifyCounterBtn2" title="Aplicar">Aplicar</button>
+          <button class="button" id="resetCounterBtn2" title="Zerar Restantes">Zerar</button>
+
+        </div>
+      </div>
+
+      <div class="timer">
+        <h2>Contagem Regressiva</h2>
+        <div id="timerDisplay" title="Contagem Regressiva">00:00:00</div>
+        <br>
+        <br>
+        <button class="button" id="startBtn" title="Iniciar">Iniciar</button>
+        <select id="hoursList" title="Selecionar horário">
+          <option value="" title="">Selecione...</option>
+          <option value="" disabled style="background-color: #507dfa; color: white;">Horários predefinidos</option>
+          <option value="01:00" title="01:00">01:00</option>
+          <option value="02:00" title="02:00">02:00</option>
+          <option value="03:00" title="03:00">03:00</option>
+          <option value="04:00" title="04:00">04:00</option>
+          <option value="05:00" title="05:00">05:00</option>
+          <option value="06:00" title="06:00">06:00</option>
+          <option value="07:00" title="07:00">07:00</option>
+          <option value="08:00" title="08:00">08:00</option>
+          <option value="" title="" disabled style="background-color: #507dfa; color: white;">Horários personalizados</option>
+      </select>
+        <input value="" id="customTimer" type="search" class="time-mask" placeholder="00:00" maxlength="5" required title="Personalizar horário">
+        <button class="button" id="editTimerBtn" title="Aplicar">Aplicar</button>
+        <button class="button" id="stopBtn" title="Parar">Parar</button>
+        <button class="button" id="resetBtn" title="Zerar">Zerar</button>
+      </div>
+    </div>
+    <br>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
